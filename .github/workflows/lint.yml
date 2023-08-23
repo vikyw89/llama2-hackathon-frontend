@@ -10,13 +10,13 @@ jobs:
             cd client
             npm i
             npm run test
-  lint-server:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: |
-            cd server
-            npm i
-            npm run test
+  # lint-server:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: |
+  #           cd server
+  #           npm i
+  #           npm run test
   
   

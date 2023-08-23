@@ -1,0 +1,17 @@
+{
+  "name": "llama2-hackathon",
+  "version": "1.0.0",
+  "description": "a personal finance assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd client && npm run test",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "type": "module",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "czg": "^1.7.1",
+    "husky": "^8.0.0"
+  }
+}
