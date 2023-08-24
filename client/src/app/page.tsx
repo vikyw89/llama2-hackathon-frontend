@@ -6,6 +6,8 @@ import { LandingCard } from "./components/landingCard";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import NotificationImportantIcon from "@mui/icons-material/NotificationImportant";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import AssistantIcon from "@mui/icons-material/Assistant";
 
 const data = {
   title: `YOUR AI FINANCE ASSISTANT`,
@@ -19,7 +21,7 @@ const data = {
     },
     {
       title: "Report",
-      description: "Gives detailed report on your finance",
+      description: "Do a detailed report on your spending",
       icon: <AssessmentIcon fontSize="inherit" />,
     },
     {
@@ -30,12 +32,12 @@ const data = {
     {
       title: "Notify",
       description: "Get notified when you overspent",
-      icon: <NotificationImportantIcon fontSize="inherit" />,
+      icon: <NotificationsIcon fontSize="inherit" />,
     },
     {
       title: "Help",
       description: "Help you achieving your financial goal",
-      icon: <NotificationImportantIcon fontSize="inherit" />,
+      icon: <AssistantIcon fontSize="inherit" />,
     },
   ],
 };
@@ -67,12 +69,11 @@ export default function Home() {
           <CashPhone />
         </div>
       </div>
-      <div className="grid w-full place-items-center overflow-x-scroll shadow-md">
+      <div className="grid w-full place-items-center shadow-md ">
         <div
-          className="grid w-full min-w-full max-w-7xl cursor-default select-none justify-items-center p-5"
+          className="grid w-full max-w-7xl cursor-default select-none justify-items-center gap-5 overflow-x-scroll p-5"
           style={{
-            gridAutoColumns: "300px",
-            gridAutoFlow: "column",
+            gridTemplateColumns: "repeat(auto-fill,minmax(300px,1fr))",
           }}
         >
           {data.features.map((v, i) => {
