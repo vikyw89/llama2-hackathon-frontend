@@ -9,7 +9,7 @@ export const LandingCard = ({
 }: LandingCardProps) => {
   return (
     <div
-      className={`${className} rounded-box relative flex w-72 flex-col gap-2 p-5 shadow-md backdrop-blur-md`}
+      className={`${className} rounded-box relative flex w-full flex-col gap-2 p-5 shadow-md backdrop-blur-md`}
     >
       <div className="absolute bottom-5 right-5 text-9xl text-base-content/20">
         {index}
