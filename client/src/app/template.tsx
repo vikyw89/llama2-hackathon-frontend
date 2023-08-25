@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import { Header } from "./components/header";
+import { Header } from "../components/header";
 // import { Footer } from "./components/footer";
-import { Background1 } from "./components/background/background1";
-import { Background2 } from "./components/background/background2";
+import { Background1 } from "../components/background/background1";
+import { Background2 } from "../components/background/background2";
 
 export default function Template({ children }: { children: ReactNode }) {
   return (
