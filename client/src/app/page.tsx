@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { CashPhone } from "./components/animation/cashPhone";
-import { Button } from "./components/button";
-import { LandingCard } from "./components/landingCard";
+import { CashPhone } from "../components/animation/cashPhone";
+import { Button } from "../components/button";
+import { LandingCard } from "../components/landingCard";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import NotificationImportantIcon from "@mui/icons-material/NotificationImportant";
@@ -10,7 +10,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import AssistantIcon from "@mui/icons-material/Assistant";
 
 const data = {
-  title: `YOUR AI FINANCE ASSISTANT`,
+  title: `YOUR AI FINANCIAL ASSISTANT`,
   actionButton: "Try on Telegram",
   description: `Registration is open for early adopters`,
   features: [
@@ -26,12 +26,12 @@ const data = {
     },
     {
       title: "Plan",
-      description: "Create a customized budget plan for you",
+      description: "Create a customized budget plan that works for you",
       icon: <NotificationImportantIcon fontSize="inherit" />,
     },
     {
       title: "Notify",
-      description: "Get notified when you overspent",
+      description: "Get notified when you deviate from your plan",
       icon: <NotificationsIcon fontSize="inherit" />,
     },
     {
